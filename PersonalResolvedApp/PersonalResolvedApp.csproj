@@ -40,6 +40,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\Microsoft.Practices.Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -289,6 +292,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalResolvedApp.BLL\PersonalResolvedApp.BLL.csproj">
+      <Project>{04a1d1c5-70bc-4725-8c5b-026fb5c885d6}</Project>
+      <Name>PersonalResolvedApp.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalResolvedApp.core\PersonalResolvedApp.core.csproj">
+      <Project>{ede9efb5-0a8a-4ff0-a0cf-957c564afc22}</Project>
+      <Name>PersonalResolvedApp.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalResolvedApp.DAO\PersonalResolvedApp.DAO.csproj">
+      <Project>{dd09eb25-e31b-4131-a8d4-cc1ac1ed897c}</Project>
+      <Name>PersonalResolvedApp.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalResolvedApp.IBLL\PersonalResolvedApp.IBLL.csproj">
+      <Project>{d29dfde9-e07e-4069-9041-5b1e0df2939e}</Project>
+      <Name>PersonalResolvedApp.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalResolvedApp.IDAO\PersonalResolvedApp.IDAO.csproj">
+      <Project>{42f2ba19-f504-4487-abe1-87df43826352}</Project>
+      <Name>PersonalResolvedApp.IDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalResolvedApp.WEBHELP\PersonalResolvedApp.WEBHELP.csproj">
+      <Project>{512d0135-9bac-49fa-b768-51b715dfcac0}</Project>
+      <Name>PersonalResolvedApp.WEBHELP</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
